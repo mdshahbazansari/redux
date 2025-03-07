@@ -11,8 +11,13 @@ const Login = () => {
   })
 
   const login = (e) => {
-    e.preventDefault()
-    alert('hello')
+    try {
+      e.preventDefault()
+      //write login for login
+      alert('Login success')
+    } catch (error) {
+      alert(error.message)
+    }
   }
 
   console.log(user)
